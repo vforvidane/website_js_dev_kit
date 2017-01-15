@@ -1,0 +1,20 @@
+{
+  "root": true, // tells eslint this is project root; wont search up directory tree
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true // gonna switch this to jest?
+  },
+  "rules": {
+		"no-console": 1 // 0 off, 1 warning, 2 error
+  }
+}
